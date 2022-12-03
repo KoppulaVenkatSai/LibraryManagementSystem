@@ -1,0 +1,32 @@
+insert into books values (1001, 'Artificaial Intelligence A Modern Approach', 20);
+insert into books values (1002, 'Design and Analysis of Algorithms', 20);
+insert into books values (1003, 'Digital Image Processsing', 20);
+insert into books values (1004, 'Engineering Drawing', 20);
+insert into books values (1005, 'Fundamentals of Database Systems', 20);
+insert into books values (1006, 'Higher Engineering Mathematics', 20);
+insert into books values (1007, 'Java The Complete Reference', 20);
+insert into books values (1008, 'Operating System Concepts', 20);
+insert into books values (1009, 'Python Programming using PS approach', 20);
+insert into books values (1010, 'Web Technologies black book', 20);
+
+insert into books values (2001, 'Avengers Endgame', 20);
+insert into books values (2002, 'Beauty and the Beast', 20);
+insert into books values (2003, 'The Conjuring', 20);
+insert into books values (2004, 'Godzilla VS Kong', 20);
+insert into books values (2005, 'Game of Thrones', 20);
+insert into books values (2006, 'Harry Potter', 20);
+insert into books values (2007, 'Jurassic Park', 20);
+insert into books values (2008, 'The Cronicles of Narnia', 20);
+insert into books values (2009, 'Pirates of the Carribean', 20);
+insert into books values (2010, 'Resident Evil', 20);
+
+insert into books values (3001, 'Alan Turing: The Enigma', 20);
+insert into books values (3002, 'Bill Gates A Biograbhy', 20);
+insert into books values (3003, 'Einstein Life and Universe', 20);
+insert into books values (3004, 'Frida', 20);
+insert into books values (3005, 'Long Walk to freedom', 20);
+insert into books values (3006, 'Satya ke Prayog', 20);
+insert into books values (3007, 'My Inventions', 20);
+insert into books values (3008, 'Steve Jobs', 20);
+insert into books values (3009, 'Team of Rivals', 20);
+insert into books values (3010, 'Wings of Fire', 20);

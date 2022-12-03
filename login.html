@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navdiv">
+            <ul>
+                <li class="navlist" id="userli">
+                    <a onclick="userdiv()">User Login</a>
+                </li>
+                <li class="navlist" id="inchargeli">
+                    <a onclick="inchargediv()">Lab Incharge Login</a>
+                </li>
+                <li class="navlist" id="readli">
+                    <a onclick="readdiv()">Read Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="logins-con">
+            <div class="logindiv" id="userlogin">
+                <fieldset>
+                    <legend align="center">User Login</legend>
+                    <form action="user.php" method="post" onsubmit="return validateForm()" name="userform">
+                        <div class="formitem">
+                            <div id="username-help-text">
+                                <p id="username-help-text-para">
+                                    Please enter your real name for easy access
+                                </p>
+                            </div>
+                            <p class="iptext" id="user-name-text">Username:</p>
+                            <ion-icon class="help-icon" id="user-name-info" onmouseover="usernamehelp()" onmouseout="usernamehelped()" name="help-circle-outline"></ion-icon>
+                            <input class="ip" type="text" id="user-name-ip" name="user-name" required><br>
+                        </div>
+                        <div class="formitem">
+                            <div id="pass-help-text">
+                                <p id="pass-help-text-para">
+                                    Set an easy password so that you can remember
+                                </p>
+                            </div>
+                            <p class="iptext" id="user-pass-text">Password:</p>
+                            <ion-icon class="help-icon" onmouseover="passhelp()" onmouseout="passhelped()"  id="user-password-info" name="help-circle-outline"></ion-icon>
+                            <input type="password" class="ip" id="user-pass-ip" name="user-pass" required><br>
+                        </div>
+                        <div class="formitem">
+                            <p class="iptext" id="user-cpass-text">Confirm Password:</p>
+                            <input type="password" class="ip" id="user-cpass-ip" name="user-cpass" required>
+                        </div>
+                        <br>
+                        <div class="submitdiv">
+                            <input class="submit" type="submit">
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="logindiv" id="inchargelogin">
+                <fieldset>
+                    <legend align="center">Lab Incharge Login</legend>
+                    <form action="incharge.php" method="post" name="inchargeform">
+                        <div class="formitem">
+                            <p class="iptext" id="incharge-name-text">Username:</p>
+                            <ion-icon class="help-icon" id="incharge-name-info" name="help-circle-outline"></ion-icon>
+                            <input class="ip" type="text" id="incharge-name-ip" name="incharge-name"><br>
+                        </div>
+                        <div class="formitem">
+                            <p class="iptext" id="incharge-pass-text">Password:</p>
+                            <ion-icon class="help-icon" id="incharge-password-info" name="help-circle-outline"></ion-icon>
+                            <input type="password" class="ip" id="incharge-pass-ip" name="incharge-pass"><br>
+                        </div>
+                        <div class="formitem">
+                            <p class="iptext" id="incharge-cpass-text">Confirm Password:</p>
+                            <input type="password" class="ip" id="incharge-cpass-ip" name="incharge-cpass">
+                        </div>
+                        <br>
+                        <div class="submitdiv">
+                            <input class="submit" type="submit">
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+            <div class="logindiv" id="readlogin">
+                <fieldset>
+                    <legend align="center">Read Me</legend>
+                    <h4>Impotant info:</h4>
+                    <p>For new users,</p>
+                    <p>Enter your name and password. When you get verified by the library incharge, you can use the same credentials to login.</p>
+                    <h4>Pro tip:</h4>
+                    <p>DM me to get verified faster 😉</p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
